@@ -70,8 +70,7 @@ class TestGenerator extends AbstractGenerator
      */
     public function __construct($inClassName, $inSourceFile = '', $outClassName = '', $outSourceFile = '')
     {
-        ///syntex error
-        int i=20
+       
         if (class_exists($inClassName)) {
             $reflector    = new \ReflectionClass($inClassName);
             $inSourceFile = $reflector->getFileName();
